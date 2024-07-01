@@ -5,7 +5,7 @@
 First, run the development server:
 
 ```bash
-npm run install
+npm  install
 npm run dev
 
 
@@ -16,7 +16,7 @@ npm run dev
 
 ```bash
 
-npm run install
+npm  install
 npm run build
 npm start
 
