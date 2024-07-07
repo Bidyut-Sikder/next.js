@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
@@ -16,6 +16,6 @@ bun dev
 
 
 ## Topics
-In this section we have seen how routing(app router) works in next.js project.
+In this section we have seen how Fetch works in next.js project.
 
 
