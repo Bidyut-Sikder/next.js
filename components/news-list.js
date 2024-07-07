@@ -4,6 +4,8 @@ import React from 'react';
 
 
 const NewsList = ({news}) => {
+
+
     return (
         <ul className='news-list'>
         {
