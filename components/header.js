@@ -1,20 +1,18 @@
-import logo from '@/assets/logo.png';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
   return (
     <header id="main-header">
-      <Link href="/">
-        <img src={logo.src}   alt="Mobile phone with posts feed on it" />
-      </Link>
+      <div id="logo">
+        <Link href="/">NextCaching</Link>
+      </div>
       <nav>
         <ul>
           <li>
-            <Link href="/feed">Feed</Link>
+            <Link prefetch={false} href="/messages">Messages</Link>
           </li>
           <li>
-            <Link className='cta-link' href="/new-post">New Post</Link>
+            <Link href="/messages/new">New Message</Link>
           </li>
         </ul>
       </nav>
