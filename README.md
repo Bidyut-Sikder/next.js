@@ -18,4 +18,12 @@ bun dev
 ## Topics
 In this section we have seen how Authentication works in next.js project.
 
+## Features 
+- [x] Login
+- [x] Logout
+- [x] Private routing
+
+
+
+
 
