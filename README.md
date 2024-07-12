@@ -16,6 +16,6 @@ bun dev
 
 
 ## Topics
-In this section we have seen how Caching works in next.js project.
+In this section we have seen how Authentication works in next.js project.
 
 
