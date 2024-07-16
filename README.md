@@ -24,7 +24,7 @@ In this section we have seen how to Fetch data in  Page Router  in next.js proje
 
 - [x] getServerSideProps()
 
-## Topics
+## Note
 And we could use getStaticProps() to pre-render  and useEffect() to fetch data at the same time  in next.js project (server side and client side rendering at the same time).
 
 
