@@ -16,10 +16,16 @@ bun dev
 
 
 ## Topics
-In this section we have seen how Page Router works in next.js project.
+In this section we have seen how to Fetch data in  Page Router  in next.js project.
 
 ## Features 
-- [x] This is a basic project created by using Pages Router 
+- [x] getStaticProps()
+- [x] getStaticPaths()
+
+- [x] getServerSideProps()
+
+## Topics
+And we could use getStaticProps() to pre-render  and useEffect() to fetch data at the same time  in next.js project (server side and client side rendering at the same time).
 
 
 
