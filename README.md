@@ -21,9 +21,9 @@ In this section we have seen how to Fetch data in  Page Router  in next.js proje
 ## Features 
 - [x] getStaticProps() it can be used dynamic or static page(it can be revalidated at certain times)
 - [x] getStaticPaths() it is used a dynamic pre-rendered time 
-   ### this two run on build time 
-- [x] getServerSideProps()
-   ### this one runs on every request time 
+### these two run on build time 
+- [x] getServerSideProps() it is used to fetch data on server side
+### this one runs on every request time 
 
 
 ## Note
