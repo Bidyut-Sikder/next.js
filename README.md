@@ -1,5 +1,3 @@
-
-
 ## Getting Started
 
 First, run the development server:
@@ -16,12 +14,18 @@ bun dev
 
 
 ## Topics
-In this section we have seen how Page Router works in next.js project.
+In this section we have seen how to Fetch data Dynamically in  Page Router  in next.js project.
 
-## Features 
-- [x] This is a basic project created by using Pages Router 
+## Features Using Firebase
+- [x] getStaticProps() it can be used dynamic or static page(it can be revalidated at certain times)
+- [x] getStaticPaths() it is used a dynamic pre-rendered time 
+### these two run on build time 
+- [x] getServerSideProps() it is used to fetch data on server side
+### this one runs on every request time 
 
 
+## Note
+And we could use getStaticProps() to pre-render  and useEffect() to fetch data at the same time  in next.js project (server side and client side rendering at the same time).
 
 
 
