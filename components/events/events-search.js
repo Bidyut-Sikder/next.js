@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import Button from '../ui/button';
+import { useRouter } from 'next/router';
 
 import classes from './event-search.module.css'
 
 const EventsSearch = (props) => {
+    const router = useRouter()
 
     const yearInput = useRef()
     const monthInput = useRef()
@@ -15,6 +17,8 @@ const EventsSearch = (props) => {
         const year = yearInput.current.value
         const month = monthInput.current.value
 
+      //  console.log(year);
+        
         props.onSearch(year, month)
 
     }

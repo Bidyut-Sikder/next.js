@@ -4,7 +4,7 @@ import LogisticsItem from './logistics-item';
 import classes from './event-logistics.module.css';
 
 function EventLogistics({event}) {
-  console.log(event);
+ // console.log(event);
   
   const { date, location, image, imageAlt } = event;
 
