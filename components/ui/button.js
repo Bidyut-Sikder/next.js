@@ -1,23 +1,21 @@
-import React from 'react';
-import classes from '../events/button.module.css';
 import Link from 'next/link';
 
-const Button = (props) => {
+import classes from './button.module.css';
 
-    if (props.link) {
+function Button(props) {
+  if (props.link) {
+    return (
+      <Link href={props.link} className={classes.btn}>
+        {props.children}
+      </Link>
+    );
+  }
 
-        return (
-            <Link className={classes.btn} href={props.link} >{props.children}</Link>
-        );
-    }
-
-
-
-    return <button type='submit' className={classes.btn}>{props.children}</button>
-};
+  return (
+    <button className={classes.btn} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
+}
 
 export default Button;
-
-
-
-
