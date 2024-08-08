@@ -14,18 +14,14 @@ bun dev
 
 
 ## Topics
-In this section we have seen how to Fetch data Dynamically in  Page Router  in next.js project.
+In this section we have seen how mongoDB works in Next js project.
 
 ## Features Using Firebase
-- [x] getStaticProps() it can be used dynamic or static page(it can be revalidated at certain times)
-- [x] getStaticPaths() it is used a dynamic pre-rendered time 
-### these two run on build time 
-- [x] getServerSideProps() it is used to fetch data on server side
-### this one runs on every request time 
-
+- **mongodb connection**:Get,Post request sending  to mongodb ,and working with it's response.
 
 ## Note
-And we could use getStaticProps() to pre-render  and useEffect() to fetch data at the same time  in next.js project (server side and client side rendering at the same time).
+- This is a basic example of how to use MongoDB in a Next.js project. we may need
+to modify the code to fit your specific use case.
 
 
 
