@@ -16,7 +16,8 @@ bun dev
 
 In this section we have seen how mongoDB works in Next js project.
 
-## Features Using Firebase
+## Features Using context API
+## Features Using mongodb
 
 - **mongodb connection**:Get,Post request sending to mongodb ,and working with it's response.
  
