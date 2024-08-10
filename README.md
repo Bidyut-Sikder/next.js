@@ -14,7 +14,7 @@ bun dev
 
 ## Topics
 
-In this section we have seen how mongoDB works in Next js project.
+This is Blog and  Portfolio project using nextjs,mongodb,
 
 ## Features Using context API
 ## Features Using mongodb
