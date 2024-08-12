@@ -14,7 +14,7 @@ bun dev
 
 ## Topics
 
-This is Blog and  Portfolio project using nextjs,mongodb,
+This is Blog and  Portfolio project using Next.Js,MongoDB,
 
 ## Features Using context API
 ## Features Using mongodb
