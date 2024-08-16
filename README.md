@@ -1,3 +1,5 @@
+
+## useStaticProps() and useStaticPaths() these two function do not work on Vercel.
 ## Getting Started
 
 First, run the development server:
@@ -13,7 +15,6 @@ bun dev
 ```
 
 ## Topics
-
 This is Blog and  Portfolio project using Next.Js,MongoDB,
 
 ## Vercel Deployment
