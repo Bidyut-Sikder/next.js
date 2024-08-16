@@ -4,7 +4,7 @@ const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 
 
 const nextConfig = (phase) => {
-  console.log(phase);
+
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       env: {

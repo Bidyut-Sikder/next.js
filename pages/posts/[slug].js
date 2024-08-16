@@ -4,6 +4,8 @@ import { getPostData, getPostsFiles } from "../../lib/posts-util";
 import Head from "next/head";
 
 export default function SinglePostDetails(props) {
+  console.log(props);
+  
   return (
     <Fragment>
       <Head>
@@ -29,9 +31,12 @@ export function getStaticPaths() {
 export function getStaticProps(context) {
   const { params } = context;
   const { slug } = params;
+  console.log(slug,'slug');
+  
 
   const postData = getPostData(slug);
  
+console.log(postData,'postdata');
 
   return {
     props: { post: postData },

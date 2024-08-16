@@ -4,14 +4,13 @@ import PostHeader from "./post-header";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import remarkGfm from "remark-gfm";
-import { Prism as SyntaxHighLighter } from "react-syntax-highlighter";
-import {
-  atomDark,
-  darcula,
-  duotoneEarth,
-  coldarkCold,
-  materialDark,
-} from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { PrismLight as SyntaxHighLighter } from "react-syntax-highlighter";
+import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
+import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
+import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
+
+SyntaxHighLighter.registerLanguage("js", js);
+SyntaxHighLighter.registerLanguage("css", css);
 
 export default function PostContent({ post }) {
   const { title, content, image } = post;
@@ -51,12 +50,11 @@ export default function PostContent({ post }) {
     },
     code: (code) => {
       const { language, children } = code;
-     
 
       return (
         <SyntaxHighLighter
           children={children}
-          style={materialDark}
+          style={atomDark}
           language={language}
         />
       );
