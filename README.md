@@ -13,7 +13,8 @@ pnpm dev
 # or
 bun dev
 ```
-
+## Note 
+### We used dummy_data and no Async function in this project that's why it runs well on vercel.
 
 ## Topics
 In this section we have seen how routing(app router) works in next.js project.
