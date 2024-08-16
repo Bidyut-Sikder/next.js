@@ -5,7 +5,7 @@ import Head from "next/head";
 
 export default function SinglePostDetails(props) {
   console.log(props);
-  
+
   return (
     <Fragment>
       <Head>
@@ -17,7 +17,7 @@ export default function SinglePostDetails(props) {
   );
 }
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const postFilesNames = getPostsFiles();
   const slugs = postFilesNames.map((file) => file.replace(/\.md$/, ""));
 
@@ -28,18 +28,18 @@ export function getStaticPaths() {
     fallback: false, // false or "blocking"
   };
 }
-export function getStaticProps(context) {
+
+export async function getStaticProps(context) {
   const { params } = context;
   const { slug } = params;
-  console.log(slug,'slug');
-  
+  console.log(slug, "slug");
 
   const postData = getPostData(slug);
- 
-console.log(postData,'postdata');
+
+  console.log(postData, "postdata");
 
   return {
     props: { post: postData },
-     revalidate: 600,
+    revalidate: 600,
   };
 }
