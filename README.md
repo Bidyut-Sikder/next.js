@@ -16,7 +16,7 @@ bun dev
 
 This is Blog and  Portfolio project using Next.Js,MongoDB,
 
-## Features Using context API
+## Vercel Deployment
 ## Features Using mongodb
 
 - **mongodb connection**:Get,Post request sending to mongodb ,and working with it's response.
