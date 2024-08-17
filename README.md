@@ -11,6 +11,7 @@ pnpm dev
 # or
 bun dev
 ```
+### NextJS Login,Logout and protcting routes  authentication with next-auth.
 
 ## Topic1
 
@@ -85,7 +86,7 @@ export default AuthPage;
 
 ```
 
-## Topic2
+## Topic3
 
 ### Protect pages from client side rendering using getSession() function inside useEffect(()=>{},[])
 
