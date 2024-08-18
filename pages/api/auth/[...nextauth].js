@@ -5,6 +5,7 @@ import CredentialsProviders from "next-auth/providers/credentials";
 
 import { connctToDatabase } from "../../../lib/db";
 import { veifyPassword } from "../../../lib/auth";
+
 export const authOptions = {
   session: {
     strategy: "jwt", // Or 'database' if using database sessions
@@ -38,7 +39,12 @@ export const authOptions = {
 
         client.close();
         //name,email,image are valid.
-        return { email: user.email };
+        return  {
+          name: null,
+          email: user.email,
+          image: null,
+          id: null
+        } // { email: user.email };
       },
     }),
   ],
