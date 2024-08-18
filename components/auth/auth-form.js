@@ -36,7 +36,7 @@ function AuthForm() {
 
   async function submitHandler(event) {
     event.preventDefault();
-    console.log(router);
+   // console.log(router);
     
     if (isLogin) {
       const result = await signIn("credentials", {
@@ -44,6 +44,8 @@ function AuthForm() {
         email: emailRef.current.value,
         password: passRef.current.value,
       });
+      console.log(result);
+      
       if (!result.error) {
         router.replace("/profile");
       }
