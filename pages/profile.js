@@ -11,7 +11,6 @@ function ProfilePage() {
 export default ProfilePage;
 
 export async function getServerSideProps(context) {
-  
   // const session = await getSession({ req: context.re,res:context.res,authOptions });
   // const session = await getServerSession({
   //   req: context.re,
@@ -20,10 +19,10 @@ export async function getServerSideProps(context) {
   // });
 
   //console.log(session);
-  const session = await getServerSession(context.req, context.res, authOptions)
-  
+  const session = await getServerSession(context.req, context.res, authOptions);
+
   //console.log(session);
-  
+
   if (!session) {
     return {
       redirect: {

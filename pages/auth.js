@@ -4,7 +4,6 @@ import { getSession } from "next-auth/react";
 import { useRouter } from "next/router";
 
 function AuthPage() {
-
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 

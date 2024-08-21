@@ -29,7 +29,7 @@ function ProfileForm(props) {
       }),
     });
     const resData = await response.json();
-   // console.log(resData);
+    // console.log(resData);
 
     if (resData.status === "success") {
       router.replace("/");
